@@ -1,0 +1,24 @@
+#Завдання 1.1
+from math import sin
+def expression (x):
+    if x > 45:
+     z = -(x ** 0.5)
+    else:
+     z = sin(2 * x)
+    return z
+x = int(input("Введіть значення x: "))
+print ("Значення виразу z = ", expression(x))
+#Завдання 1.2
+def fibonacci(p):
+    a = 0
+    b = 1
+    if p < 0:
+        return 0
+    if p == 0:
+        return 1
+    else:
+          while b <= p:
+               a, b = b, a + b
+          return b
+p = int(input("Введіть значення p: "))
+print("перше число Фібоначчі, що більше за p: ", fibonacci(p))
